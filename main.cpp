@@ -3,7 +3,7 @@
 const int WIDTH = 640;
 const int HEIGHT = 480;
 
-int main(int argc, char* args[] )
+int main(int argc, char *args[])
 {
     SDL_Init(SDL_INIT_VIDEO);
 
@@ -15,7 +15,7 @@ int main(int argc, char* args[] )
         HEIGHT,
         SDL_WINDOW_SHOWN);
 
-    // NULL window would indicate an error
+    // NULL window would indicate an error - access with SDL_GetError()
 
     SDL_Surface *surface = SDL_GetWindowSurface(window);
 
